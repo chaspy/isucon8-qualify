@@ -1,14 +1,11 @@
 [portal_web]
-# ポータルをデプロイするサーバ
-
+47.91.11.62
 
 [bench]
-# ベンチマーカをデプロイするサーバ
-
+47.91.11.62
 
 [webapp1]
-# 競技用webappをデプロイするサーバ(1)
-
+47.91.11.62
 
 [webapp2]
 # 競技用webappをデプロイするサーバ(2)
@@ -16,3 +13,9 @@
 
 [webapp3]
 # 競技用webappをデプロイするサーバ(3)
+
+[all:vars]
+ansible_port=22
+ansible_user=root
+# ansible_ssh_pass=password
+ansible_ssh_private_key_file="~/.ssh/id_rsa"
